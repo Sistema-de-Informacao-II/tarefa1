@@ -118,8 +118,8 @@ void loop()
     {
       insertRow(); 
       delay(500); 
-      queryTable();
-      delay(2000);
+      //queryTable();
+      //delay(2000);
       conn.close();
     } 
     else 
@@ -147,5 +147,5 @@ void loop()
   MYSQL_DISPLAY("\nSleeping...");
   MYSQL_DISPLAY("================================================");
  
-  delay(120000); // Intervalo de 2 minutos (solicitado na tarefa) para a próxima execução do programa
+  delay(60000); // Intervalo de 1 minuto
 }
